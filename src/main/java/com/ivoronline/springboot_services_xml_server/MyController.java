@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyController {
 
+  //==========================================================================
+  // GET PERSON
+  //==========================================================================
   @ResponseBody
   @RequestMapping(value = "GetPerson", produces = {MediaType.APPLICATION_XML_VALUE}) //Force XML response
   GetPersonResponse getPerson(@RequestBody GetPersonRequest getPersonRequest) {
